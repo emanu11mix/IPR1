@@ -51,9 +51,7 @@
 				#menu #burger {width:75px; height:75px; position:absolute; top:0; right:0; background-color:#202529; display:block; cursor:pointer}
 				#line1, #line2, #line3 {background-color:white; height:4px; width:35px; position:absolute; left:20px}
 				#menu #close {color:white; font-weight:600; font-size:26pt; text-align:center; width:75px; height:75px; position:absolute; top:18px; right:0; z-index:3}
-				#menu #burger #line1 {top:25px}
-				#menu #burger #line2 {top:35px}
-				#menu #burger #line3 {top:45px}
+				#menu #open {color:white; font-weight:600; font-size:26pt; text-align:center; width:75px; height:75px; position:absolute; top:18px; right:0; z-index:3}
 				#menu #burger #close {display:none}
 				#block1 {height:350px}
 				#block1 h1 {padding: 110px 0 30px 50px; font-size:28pt}
@@ -75,11 +73,8 @@
 			@media screen and (max-width: 320px){
 				#menu {height:35px; padding-top:13px}
 				#menu span {font-size:12pt; margin-left:20px}
-				#menu #burger {width:48px; height:48px}
-				#menu #burger div {height:3px; width:22px; left:14px}
-				#menu #burger #line1 {top:15px}
-				#menu #burger #line2 {top:22px}
-				#menu #burger #line3 {top:29px}
+				#menu #burger {width:48px; height:48px; color:white}
+				#menu #open {font-size:20pt; width:75px; height:75px; top:8px}
 				#menu #close {font-size:20pt; width:75px; height:75px; top:8px}
 				#menu ul {top:48px}
 				#menu a {font-size:10pt}

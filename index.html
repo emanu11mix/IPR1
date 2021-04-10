@@ -5,6 +5,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/19615cf573.js" crossorigin="anonymous"></script>
 	</head>
 
 
@@ -22,29 +23,27 @@
 				<li><a href="#">BLOG</a></li>
 			</ul>
 			<div id="burger" onclick="showHide('mobile')">
-				<div id="line1"></div>
-				<div id="line2"></div>
-				<div id="line3"></div>
-				<div id="close">X</div>
+				<div id="open"><i class="fas fa-bars"></i></div>
+				<div id="close"><i class="fas fa-times"></i></div>
 			</div>
 		</div>
 
 		<div id="block1">
 			<h1>Awesome Free PSD templates & Resources</h1>
 			<a href="#">www.BlazRobar.com</a>
-			<span><a href="#">></a></span>
+			<span><a href="#"><i class="fas fa-angle-right"></i></a></span>
 		</div>
 
 		<div id="block2">
-			<div><a href="#">></a></div>
+			<div><a href="#"><i class="fas fa-angle-right"></i></a></div>
 			<span>I'm like the Robin Hood of PSD files.</span>
 			
 		</div>
 		
 		<div id="block3">
-			<div id="arrow"><a href="#">></a></div>
-			<div><img src="bridge.jpg"></div>
-			<div><img src="girl2.jpg"></div>			
+			<div id="arrow"><a href="#"><i class="fas fa-angle-right"></i></a></div>
+			<div><img src="Bridge2.jpg"></div>
+			<div><img src="girl3.jpg"></div>			
 		</div>
 
 		<div id="block4">
@@ -64,22 +63,16 @@
 			function showHide(element_id){
 				var element1=document.getElementById('mobile');
 				var element2=document.getElementById('close');
-				var element3=document.getElementById('line1');
-				var element4=document.getElementById('line2');
-				var element5=document.getElementById('line3');
+				var element3=document.getElementById('open');
 				
 				if(element1.style.display =="block"){
 					element1.style.display="none";
 					element2.style.display="none";
 					element3.style.display="block";
-					element4.style.display="block";
-					element5.style.display="block";
 				} else {
 					element1.style.display="block";
 					element2.style.display="block";	
 					element3.style.display="none";
-					element4.style.display="none";
-					element5.style.display="none";
 				}
 				
 			}
